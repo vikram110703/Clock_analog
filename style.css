@@ -1,0 +1,111 @@
+body{
+    padding: 0;
+    margin:0;
+    background-color: rgb(94, 75, 106);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#logo3{
+    position :absolute;
+    width:4000px;
+    height: auto ;
+    top:0%;
+    /* background-image: -moz-linear-gradient(); */
+}
+
+#logo{
+    position:absolute;
+    width: 200px;
+    left:13%;
+    top:30%;
+   
+}
+#logo2{
+    position:absolute;
+    width: 200px;
+    left:27%;
+    top:10%;
+   
+}
+
+
+#clock{
+    position:relative;
+    background-color: rgb(255, 255, 255);
+    width:400px;
+    height:400px;
+    border-radius:50%;
+    justify-content: center;
+    border: 5px solid rgb(32, 136, 43);
+    box-shadow:1px 1px 2px rgb(37, 114, 30);
+}
+.twelve{
+    position: absolute;
+    left: 48%;
+    top:2%;
+    /* transform: translateX(-50%); */
+}
+.three{
+    position: absolute;
+    top:50%;
+    left:96%;
+}
+.six{
+    position: absolute;
+    left:49%;
+    top:93%;
+}
+.nine{
+    position: absolute;
+    top:50%;
+    left:2%;
+}
+#numbers{
+    font-size: 20px;
+    color:rgb(119, 136, 153);
+    font-weight:100%;
+    text-shadow:1px 1px rgb(119, 136, 153);
+}
+.arrows{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.arrows::before{
+    content:"";
+    background-color: darkgreen;
+    width:25px;
+    height: 25px;
+    border-radius: 50%;
+    box-shadow:1px 1px 2px rgba(0, 0, 0, 0.7);
+    z-index: 4;
+
+}
+.arrows div{
+    position:absolute;
+    background-color: black;
+    width: 7px;
+    height: 120px;
+    transform-origin: bottom center;
+    bottom: 50%;
+    z-index: 3;
+    border-radius: 50% 50% 0 0;
+    box-shadow:1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+.arrows .hour{
+    height: 80px;
+    transform: rotate(30deg);
+    background-color: rgb(183, 107, 31);
+
+}
+.arrows .second{
+    height: 140px;
+    transform: rotate(300deg);
+    background-color: goldenrod;
+}
+
+
